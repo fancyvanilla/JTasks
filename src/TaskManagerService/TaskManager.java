@@ -14,7 +14,7 @@ public class TaskManager implements TaskManagerInterface{
 
     @Override
     public String removeTask(Integer id) {
-     if (tasks.size()-id<0) {
+     if (tasks.size()-id>0) {
          tasks.remove(tasks.get(id));
          return "Task removed successfully";}
      else {
